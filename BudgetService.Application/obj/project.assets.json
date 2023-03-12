@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "BudgetService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BudgetService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BudgetService.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BudgetService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BudgetService.Domain/BudgetService.Domain.csproj",
+      "msbuildProject": "../BudgetService.Domain/BudgetService.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "BudgetService.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/mrysaev/.nuget/packages/": {}
@@ -32,7 +51,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/mrysaev/Desktop/Projects/BudgetService/BudgetService/BudgetService.Domain/BudgetService.Domain.csproj": {
+              "projectPath": "/Users/mrysaev/Desktop/Projects/BudgetService/BudgetService/BudgetService.Domain/BudgetService.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
